@@ -1,0 +1,359 @@
+input[type="text"] {
+	width: 100%;
+	background: none;
+	padding: 15px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	color: #fff;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	/* box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important; */
+	outline: none !important;
+}
+
+input[type="text"]:hover {
+	width: 100%;
+	background: none;
+	padding: 15px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	color: #fff;
+	border-bottom: 2px solid rgba(255, 255, 255);
+	/* box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important; */
+	outline: none !important;
+}
+
+::placeholder {
+	color: rgba(255, 255, 255, 0.505);
+}
+
+:focus::placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input#message {
+	padding-bottom: 80px;
+	margin-bottom: 20px;
+}
+
+.button_submit {
+	float: right;
+	@include btnwhite;
+	padding: 18px 24px;
+	border-radius: 8px;
+	background-color: $white;
+	color: #333136;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	width: 152px;
+}
+
+.button_submit:hover {
+	@include btnhover;
+	padding: 18px 24px;
+	border-radius: 8px;
+	background-color: $lpeach;
+	color: $white;
+	text-transform: uppercase;
+}
+
+.main_contact_contain {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	background-image: url(../src/img/about_us_background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 1111px;
+	height: 480px;
+	margin: 0 auto 160px;
+
+	&_contactus {
+		width: 450px;
+		height: 184px;
+	}
+
+	&_contactus_h1 {
+		@include h1jm;
+		color: $white;
+		margin-bottom: 32px;
+	}
+
+	&_contactus_p {
+		@include bodyjr;
+		color: $white;
+	}
+
+	&_form_cont {
+		@include bodyjr;
+		color: $white;
+		width: 380px;
+	}
+}
+
+.contact_nav_country {
+	height: 364px;
+	width: 1110px;
+	margin: 0 auto 160px;
+}
+
+.contact_nav_country_ul {
+	height: 364px;
+	width: 1110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact_nav_country_ul_li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact_nav_country_ul_li_h3 {
+	@include h3jm;
+	margin-bottom: 35px;
+}
+
+.contact_nav_country_ul_li_img {
+	margin-bottom: 55px;
+}
+
+.contact_nav_country_ul_li_btn {
+	@include btnred;
+
+	&:hover {
+		@include btnhover;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	header.bloc_header {
+		width: 689px;
+	}
+
+	.main_contact_contain {
+		flex-direction: column;
+		justify-content: flex-start;
+		max-width: 689px;
+		height: 711px;
+		border-radius: 15px;
+
+		&_contactus {
+			width: 100%;
+			margin-bottom: 40px;
+			margin-top: 30px;
+		}
+
+		&_contactus_h1 {
+			@include h1jm;
+			color: $white;
+			width: 573px;
+			margin: 35px auto;
+		}
+
+		&_contactus_p {
+			@include bodyjr;
+			width: 573px;
+			margin: 0 auto;
+			color: $white;
+		}
+
+		&_form_cont {
+			@include bodyjr;
+			color: $white;
+			width: 573px;
+			margin: 0 auto;
+		}
+	}
+
+	.contact_nav_country {
+		height: 100%;
+		width: 689px;
+		margin-bottom: 120px;
+	}
+
+	.contact_nav_country_ul {
+		height: 100%;
+		width: 689px;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.contact_nav_country_ul_li {
+		margin-bottom: 50px;
+	}
+
+	.last {
+		margin-bottom: 0;
+	}
+
+	.contact_nav_country_ul_li_h3 {
+		@include h3jm;
+		margin-bottom: 30px;
+	}
+
+	.contact_nav_country_ul_li_img {
+		margin-bottom: 30px;
+	}
+
+	section.footer_section {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header.bloc_header {
+		width: 689px;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		background: none;
+		padding: 15px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: none;
+		color: rgba(255, 255, 255, 0.5);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	input[type="text"]:hover {
+		width: 100%;
+		background: none;
+		padding: 15px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: none;
+		color: rgb(255, 255, 255);
+		border-bottom: 1px solid rgba(255, 255, 255);
+	}
+
+	::placeholder {
+		color: #fff;
+		opacity: 0.5;
+	}
+
+	:focus::placeholder {
+		color: rgb(255, 255, 255);
+	}
+
+	input#message {
+		padding-bottom: 80px;
+		margin-bottom: 30px;
+	}
+
+	.button_submit {
+		margin-right: 25%;
+		@include btnwhite;
+		padding: 18px 24px;
+		border-radius: 8px;
+		background-color: $white;
+		color: #333136;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.button_submit:hover {
+		@include btnhover;
+		padding: 18px 24px;
+		border-radius: 8px;
+		background-color: $lpeach;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	.main_contact_contain {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+		background-image: url(../src/img/about_us_background.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		max-width: 295px;
+		height: 764px;
+		border-radius: 15px;
+		margin: 0 auto 160px;
+		padding: 40px;
+		text-align: center;
+		border-radius: 0;
+
+		&_contactus {
+			width: 100%;
+			margin-bottom: 100px;
+		}
+
+		&_contactus_h1 {
+			@include h1jm;
+			color: $white;
+			margin-bottom: 32px;
+		}
+
+		&_contactus_p {
+			@include bodyjr;
+			color: $white;
+		}
+
+		&_form_cont {
+			@include bodyjr;
+			color: $white;
+			width: 295px;
+			margin: 0 auto;
+		}
+	}
+
+	.main_contact_contain {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.contact_nav_country {
+		height: 100%;
+		width: 100%;
+		margin-bottom: 120px;
+	}
+
+	.contact_nav_country_ul {
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.contact_nav_country_ul_li {
+		margin-bottom: 50px;
+	}
+
+	.last {
+		margin-bottom: 0;
+	}
+
+	.contact_nav_country_ul_li_h3 {
+		@include h3jm;
+		margin-bottom: 30px;
+	}
+
+	.contact_nav_country_ul_li_img {
+		margin-bottom: 30px;
+	}
+
+	section.footer_section {
+		margin-top: 100px;
+	}
+}
